@@ -1,0 +1,17 @@
+extends layouts/login-layout.pug
+
+block content 
+    .loginContainer 
+        h1 Sign in to Twitter 
+        form(method="post") 
+            p.errorMessage #{errorMessage}
+
+            //- input(type="text", name="logUsername", placeholder="Username or Email", value=logUsername required="")
+            //- input(type="password", name="logPassword", placeholder="Password", required="")
+
+
+
+            input(type="text", name="logUsername", placeholder="Username or Email", value="messi" required="")
+            input(type="password", name="logPassword", placeholder="Password", value="messi" required="")
+            input(type="submit", value="login")
+        a(href="/register") Need an account? Register here.     
